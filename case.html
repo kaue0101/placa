@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+<body>
+
+<script>
+var placa = "";
+var placa1 = "";
+placa = prompt ("qual sua placa?")
+if (placa == "cnb-420")
+placa1 = prompt ("Qual dia da semana você gostaria de consultar?")
+placa1 = placa1.toLowerCase();
+switch(placa1){
+    case "terça":
+    alert ("você não pode andar as terças");
+    break;
+    case "segunda":
+        alert("você pode andar as segundas");
+        break;
+        case "quarta":
+            alert("você  pode andar as quartas");
+            break;
+    case "quinta":
+        alert ("você pode andar as quintas");
+        break;
+        case "sexta": 
+        alert("você pode andar as sextas ");
+        break;
+        default:
+        alert( "Placa não identificada, por favor digite a placa certa")
+       break;
+}
+</script>
+
+</body>
+</html>
